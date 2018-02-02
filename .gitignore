@@ -1,0 +1,8 @@
+﻿#过滤文件夹
+/node_modules/
+
+
+#过滤所有.zip文件
+*.zip 
+*.mp3
+*.mp4
