@@ -160,6 +160,7 @@ s, i, em {
 }
 
 .head_bar .sitelinks li {
+  height: 30px;
   position: relative;
 }
 
@@ -191,6 +192,9 @@ s, i, em {
 }
 
 .head_bar .sitelinks .mylist {
+  padding-top: 4px;
+  z-index: 2;
+  background: #fff;
   width: 100px;
   position: absolute;
   display: none;
@@ -199,13 +203,38 @@ s, i, em {
 }
 
 .head_bar .sitelinks .mylist li {
+  width: 100%;
   height: 24px;
   line-height: 24px;
   font-size: 12px;
   color: #85726C;
 }
 
-.head_bar li:hover a {
+.head_bar .sitelinks .mylist li:hover {
+  background: #A11011;
+}
+
+.head_bar .sitelinks .mylist li:hover a {
+  color: #fff;
+}
+
+.head_bar .sitelinks .mylist li a {
+  padding: 0 8px;
+}
+
+.head_bar .sitelinks .mylist:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 5px solid #ECE7E3;
+  border-bottom-color: #fff;
+  position: absolute;
+  left: 34px;
+  top: -10px;
+}
+
+.head_bar li:hover > a {
   color: #D3161B;
 }
 
@@ -334,6 +363,8 @@ s, i, em {
 }
 
 .nav {
+  position: relative;
+  z-index: 100;
   background: #D3161B;
 }
 
@@ -354,6 +385,8 @@ s, i, em {
 }
 
 .nav .container .nav_l ul {
+  z-index: 100;
+  background: #fff;
   box-size: border-box;
   position: absolute;
   top: 36px;
@@ -371,7 +404,7 @@ s, i, em {
 .nav .container .nav_l ul li a {
   color: #666666;
   line-height: 24px;
-  padding: 0 2px;
+  padding: 0 1px;
 }
 
 .nav .container .nav_l ul li h4 {
@@ -393,6 +426,54 @@ s, i, em {
   background: #D3161B;
   color: #fff;
   border-radius: 10px;
+}
+
+.nav .container .nav_l ul li:hover {
+  transform: translateY(1px);
+}
+
+.nav .container .nav_l ul li ul {
+  display: none;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  width: 260px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0 10px;
+  transition: 2s all;
+}
+
+.nav .container .nav_l ul li ul li {
+  padding: 4px 0 10px;
+  border-bottom: 1px dashed #81665c;
+  font-size: 14px;
+}
+
+.nav .container .nav_l ul li ul li h5 {
+  float: left;
+  width: 80px;
+  line-height: 24px;
+  font-family: 微软雅黑;
+}
+
+.nav .container .nav_l ul li ul li p {
+  margin-left: 85px;
+  line-height: 22px;
+}
+
+.nav .container .nav_l ul li ul li p a {
+  padding: 0 6px;
+  font-size: 12px;
+}
+
+.nav .container .nav_l ul li ul li p a:hover {
+  color: #D3161B;
+}
+
+.nav .container .nav_l ul li:hover ul {
+  animation: move 2s ease 1;
+  display: block;
+  animation-fill-mode: forwards;
 }
 
 .nav .container .nav_r li {
@@ -452,4 +533,14 @@ s, i, em {
 
 .nav .container .nav_r li:nth-child(8):before {
   background-position: -160px 0;
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(200px);
+    opacity: 0.8;
+  }
 }
