@@ -402,12 +402,16 @@
   top: 0;
 }
 
-#main .wine .carousel .carousel_l {
-  width: 204px;
+#main .wine, #main .xo, #main .chineBj, #main .old_wine, #main .wine_set {
+  border-bottom: 1px solid #D2D2CE;
 }
 
-#main .wine .carousel .carousel_l li {
-  width: 101px;
+#main .carousel .carousel_l {
+  width: 200px;
+}
+
+#main .carousel .carousel_l li {
+  width: 100px;
   height: 50px;
   background: #D6C9BC;
   float: left;
@@ -416,7 +420,7 @@
   position: relative;
 }
 
-#main .wine .carousel .carousel_l li img {
+#main .carousel .carousel_l li img {
   display: block;
   width: 80px;
   height: 40px;
@@ -427,7 +431,7 @@
   margin-top: -20px;
 }
 
-#main .wine .carousel .carousel_r {
+#main .carousel .carousel_r {
   width: 235px;
 }
 
@@ -513,17 +517,17 @@
   line-height: 26px;
 }
 
-#main .goodslist .right {
+#main .right {
   width: 240px;
   height: 722px;
   background: #F4F4F0;
 }
 
-#main .goodslist .right h4 {
+#main .right h4 {
   height: 40px;
 }
 
-#main .goodslist .right ul li {
+#main .right ul li {
   color: #5B473D;
   font-size: 12px;
   line-height: 20px;
@@ -532,7 +536,7 @@
   position: relative;
 }
 
-#main .goodslist .right ul li em {
+#main .right ul li em {
   display: block;
   width: 20px;
   height: 20px;
@@ -544,7 +548,7 @@
   top: 12px;
 }
 
-#main .goodslist .right ul li em:after {
+#main .right ul li em:after {
   content: "";
   display: block;
   width: 0;
@@ -556,6 +560,258 @@
   top: 5px;
 }
 
-#main .goodslist .right ul li a {
+#main .right ul li a {
   color: #5B473D;
+}
+
+#main .title {
+  padding: 10px 0 17px 0;
+}
+
+#main .guess {
+  padding-top: 16px;
+}
+
+#main .guess .like_left {
+  width: 300px;
+  padding: 6px 23px 0;
+  background: #EDF4F8;
+}
+
+#main .guess .like_left h2 {
+  width: 118px;
+  height: 54px;
+  line-height: 54px;
+  font-size: 22px;
+  color: #77C9F9;
+  position: relative;
+  margin-left: 68px;
+}
+
+#main .guess .like_left h2:before, #main .guess .like_left h2:after {
+  content: "";
+  display: block;
+  width: 68px;
+  height: 1px;
+  background: #8DCAFA;
+  position: absolute;
+  left: -80px;
+  top: 25px;
+}
+
+#main .guess .like_left h2:after {
+  left: 100px;
+}
+
+#main .guess .like_left ul li {
+  float: left;
+  margin-bottom: 36px;
+}
+
+#main .guess .like_left ul li a {
+  padding-left: 58px;
+  display: block;
+  width: 125px;
+  font-size: 18px;
+  color: #59656F;
+  line-height: 45px;
+  position: relative;
+}
+
+#main .guess .like_left ul li a:before {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 45px;
+  background: url(img/sprite.fw.png) no-repeat;
+  background-position: -100px -30px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+#main .guess .like_left ul li:last-child {
+  margin-bottom: 25px;
+}
+
+#main .guess .like_left ul li:last-child a:before {
+  background-position: -140px -80px;
+}
+
+#main .guess .like_left ul li:nth-child(2) a:before {
+  background-position: -170px -30px;
+}
+
+#main .guess .like_left ul li:nth-child(3) a:before {
+  background-position: -230px -30px;
+}
+
+#main .guess .like_left ul li:nth-child(4) a:before {
+  background-position: -290px -30px;
+}
+
+#main .guess .like_left ul li:nth-child(5) a:before {
+  background-position: -350px -30px;
+}
+
+#main .guess .like_left ul li:nth-child(6) a:before {
+  background-position: -0px -80px;
+}
+
+#main .guess .like_left ul li:nth-child(7) a:before {
+  background-position: -70px -80px;
+}
+
+#main .guess .like_right {
+  width: 897px;
+}
+
+#main .guess .like_right li {
+  float: left;
+  width: 299px;
+  height: 192px;
+  font-size: 12px;
+  padding-top: 24px;
+  line-height: 18px;
+  border-right: 1px solid #EBEBE8;
+  border-bottom: 1px solid #EBEBE8;
+}
+
+#main .guess .like_right li a {
+  display: block;
+  float: left;
+  color: #663333;
+}
+
+#main .guess .like_right li a:hover {
+  color: #D3161B;
+}
+
+#main .guess .like_right li a img {
+  height: 138px;
+  margin-top: 2px;
+}
+
+#main .guess .like_right li p {
+  color: #777777;
+}
+
+#main .guess .like_right li .price {
+  margin-left: 82px;
+  margin-top: 20px;
+  color: #D3161B;
+}
+
+#main .guess .like_right li .price strong {
+  font-size: 18px;
+}
+
+#main .interest {
+  margin-top: 48px;
+}
+
+#main .interest h2 {
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+  color: #fff;
+  padding-left: 50px;
+}
+
+#main .interest .interest_l {
+  border: 1px solid #DCDCDC;
+  width: 330px;
+}
+
+#main .interest .interest_l h2 {
+  background: #FBC85B;
+  position: relative;
+  z-index: 2;
+}
+
+#main .interest .interest_l h2:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(img/sprite.fw.png) no-repeat;
+  background-position: -210px -80px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#main .interest .interest_l ul li {
+  margin-top: 10px;
+}
+
+#main .interest .interest_l ul li p {
+  font-size: 16px;
+  color: #333333;
+}
+
+#main .interest .interest_l ul li p em {
+  font-size: 14px;
+}
+
+#main .interest .interest_l ul li .price {
+  margin-top: 56px;
+  font-size: 14px;
+  color: #B51D1A;
+}
+
+#main .interest .interest_l ul li .price strong {
+  font-size: 28px;
+}
+
+#main .interest .interest_l ul li .salenum {
+  margin-top: 18px;
+  color: #999999;
+}
+
+#main .interest .interest_l .more {
+  display: block;
+  width: 20px;
+  height: 22px;
+  background: url(img/sprite.fw.png) no-repeat;
+  background-position: -290px -80px;
+  margin: 5px 0 5px 140px;
+}
+
+#main .interest .interest_l h3 {
+  background: #F4F4F4;
+  padding-left: 36px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  color: #333333;
+  border-bottom: 1px dashed #ccc;
+}
+
+#main .interest .interest_l .tasting {
+  padding-left: 22px;
+  padding-bottom: 18px;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+#main .interest .interest_l .tasting a {
+  color: #333;
+}
+
+#main .interest .interest_c {
+  width: 530px;
+  margin-left: 8px;
+}
+
+#main .interest .interest_c h2 {
+  background: #A7E1F6;
+}
+
+#main .interest .interest_r {
+  width: 320px;
+}
+
+#main .interest .interest_r h2 {
+  background-color: #E9AEBA;
 }

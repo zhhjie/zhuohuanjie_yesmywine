@@ -20,7 +20,7 @@ gulp.task('server',function(){
     browserSync({
         proxy:'http://localhost:1000',
 
-        files:['./src/**/*.html','./src/css/*.css','./src/js/*.js']
+        files:['./src/**/*.html','./src/css/*.css','./src/js/*.js','./src/img/*.jpg','./src/css/img/*.png']
     });
     gulp.watch('./src/sass/*.scss',['compileSass'])
 })
