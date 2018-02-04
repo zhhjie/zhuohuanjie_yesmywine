@@ -544,3 +544,175 @@ s, i, em {
     opacity: 0.8;
   }
 }
+
+.foot-col {
+  background: #E8E8E8;
+  padding-bottom: 68px;
+}
+
+.foot-col .container .foot-col1 {
+  padding-left: 10px;
+  border-bottom: 1px solid #D3161B;
+}
+
+.foot-col .container .foot-col1 h2 {
+  margin-top: 12px;
+  height: 108px;
+  line-height: 108px;
+  font-size: 28px;
+  color: #D3161B;
+  margin-right: 120px;
+}
+
+.foot-col .container .foot-col1 a {
+  position: relative;
+  width: 184px;
+  display: block;
+  float: left;
+  margin-top: 58px;
+  font-size: 20px;
+  color: #D3161B;
+}
+
+.foot-col .container .foot-col1 a h3 {
+  font-weight: bold;
+}
+
+.foot-col .container .foot-col1 a span {
+  color: #999999;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.foot-col .container .foot-col1 a:before {
+  content: "";
+  display: block;
+  height: 40px;
+  width: 40px;
+  background: url(img/sprite.fw.png) no-repeat;
+  background-position: 0 -160px;
+  position: absolute;
+  left: -42px;
+  top: -7px;
+}
+
+.foot-col .container .foot-col1 a:nth-of-type(2):before {
+  background-position: -60px -160px;
+}
+
+.foot-col .container .foot-col1 a:nth-of-type(3):before {
+  background-position: -120px -160px;
+}
+
+.foot-col .container .foot-col1 a:nth-of-type(4):before {
+  background-position: -180px -160px;
+}
+
+.foot-col .container .foot-col1 a:nth-of-type(5):before {
+  background-position: -240px -160px;
+}
+
+.foot-col .container .foot-col2 {
+  padding-top: 35px;
+}
+
+.foot-col .container .foot-col2 li {
+  width: 74px;
+  margin-right: 46px;
+  float: left;
+}
+
+.foot-col .container .foot-col2 li h3 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #666666;
+  height: 32px;
+  line-height: 32px;
+}
+
+.foot-col .container .foot-col2 li p {
+  font-size: 12px;
+}
+
+.foot-col .container .foot-col2 li p a {
+  display: block;
+  color: #66667A;
+  line-height: 22px;
+}
+
+.foot-col .container .foot-col2 li p span {
+  color: #66667A;
+  line-height: 22px;
+}
+
+.foot-col .container .foot-col2 li .letter {
+  height: 88px;
+  width: 88px;
+  background: url(../css/img/index_r2.png) no-repeat;
+}
+
+.foot-col .container .foot-col3 .mobile {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.foot-col .container .foot-col3 .mobile a {
+  margin-right: 15px;
+  float: left;
+  display: block;
+  width: 106px;
+  height: 30px;
+  background: #D3161B;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.foot-col .container .foot-col3 .code dt {
+  margin-right: 15px;
+  float: left;
+  text-indent: -10000px;
+  display: block;
+  width: 104px;
+  height: 98px;
+  background: url(../css/img/link.png) no-repeat;
+}
+
+.foot-col .container .foot-col3 .code p {
+  width: 96px;
+  height: 98px;
+  background: url(../css/img/app.png) no-repeat;
+}
+
+.foot-col .container .foot-col3 .sns {
+  margin-top: 24px;
+}
+
+.foot-col .container .foot-col3 .sns .sina {
+  display: block;
+  text-index: -10000px;
+  width: 42px;
+  height: 38px;
+  background: url(../css/img/sina.png) no-repeat;
+  margin-right: 8px;
+}
+
+.foot-col .container .foot-col3 .sns .sns-r {
+  font-size: 14px;
+  color: #66667A;
+  margin-right: 10px;
+}
+
+.foot-col .container .foot-col3 .sns .sns-r .add-btn {
+  margin-top: 4px;
+  color: #66667A;
+  display: block;
+  background: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+  width: 60px;
+  height: 18px;
+  text-align: center;
+}

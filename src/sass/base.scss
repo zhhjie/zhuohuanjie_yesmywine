@@ -434,3 +434,159 @@ $mainColor:#D3161B;
         opacity:0.8;
     }
 }
+
+
+
+//底部footer
+.foot-col{
+    background:#E8E8E8;
+    padding-bottom:68px;
+    .container{
+        .foot-col1{
+            padding-left:10px;
+            border-bottom:1px solid $mainColor;
+            h2{
+                margin-top:12px;
+                height:108px;
+                line-height: 108px;
+                font-size:28px;
+                color:$mainColor;
+                margin-right:120px;
+            }
+            a{
+                position:relative;
+                width:184px;
+                display:block;
+                float: left;
+                margin-top:58px;
+                font-size:20px;
+                color:$mainColor;
+                h3{
+                   font-weight:bold; 
+                }      
+                span{
+                    color:#999999;
+                    font-size:12px;
+                    line-height: 18px;
+                }
+                &:before{
+                    content:"";
+                    display:block;
+                    height:40px;
+                    width: 40px;
+                    background:url(img/sprite.fw.png) no-repeat;
+                    background-position:0 -160px;
+                    position:absolute;
+                    left:-42px;
+                    top:-7px;
+                }
+                &:nth-of-type(2):before{
+                    background-position:-60px -160px;
+                }
+                &:nth-of-type(3):before{
+                    background-position:-120px -160px;
+                }
+                &:nth-of-type(4):before{
+                    background-position:-180px -160px;
+                }
+                &:nth-of-type(5):before{
+                    background-position:-240px -160px;
+                }
+            }
+        }
+        .foot-col2{
+            padding-top:35px;
+            li{
+                width:74px;
+                margin-right:46px;
+                float: left;
+                h3{
+                    font-size:14px;
+                    font-weight:bold;
+                    color:#666666;
+                    height:32px;
+                    line-height: 32px;
+                }
+                p{
+                    font-size:12px;
+                    a{
+                        display:block;
+                        color:#66667A;
+                        line-height: 22px;
+                    }
+                    span{
+                        color:#66667A;
+                        line-height: 22px;
+                    }
+
+                }
+                .letter{
+                    height:88px;
+                    width:88px;
+                    background:url(../css/img/index_r2.png) no-repeat;}
+            }
+        }
+        .foot-col3{
+            .mobile{
+                margin-top:40px;
+                margin-bottom:20px;
+                a{
+                    margin-right:15px;
+                    float: left;
+                    display:block;
+                    width:106px;
+                    height:30px;
+                    background:$mainColor;
+                    font-size:12px;
+                    font-weight:bold;
+                    line-height:30px;
+                    color:#fff;
+                    text-align:center;
+                }
+            }
+            .code{
+                dt{
+                    margin-right:15px;
+                    float: left;
+                    text-indent:-10000px;
+                    display:block;
+                    width:104px;
+                    height:98px;
+                    background:url(../css/img/link.png) no-repeat;
+                }
+                p{
+                    width:96px;
+                    height:98px;
+                    background:url(../css/img/app.png) no-repeat;
+                }
+            }
+            .sns{
+                margin-top:24px;
+                .sina{
+                    display:block;
+                    text-index:-10000px;
+                    width: 42px;
+                    height: 38px;
+                    background:url(../css/img/sina.png) no-repeat;
+                    margin-right:8px;
+                }
+                .sns-r{
+                    font-size:14px;
+                    color:#66667A;
+                    margin-right:10px;
+                    .add-btn{
+                        margin-top:4px;
+                        color:#66667A;
+                        display:block;
+                        background:#fff;
+                        border-radius:4px;
+                        font-size:12px;
+                        width: 60px;
+                        height: 18px;
+                        text-align:center;
+                    }
+                }
+            }
+        }
+    }
+}
