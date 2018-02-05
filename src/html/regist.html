@@ -5,6 +5,7 @@
     <title>注册也买酒</title>
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/regist.css" />
+    <script type="text/javascript" src="../js/require.js" data-main="../js/regist"></script>
 </head>
 <body>
     <div id="head">
@@ -15,5 +16,45 @@
             </div>
          </div>
     </div>
+    <div id="main">
+        <div class="container clearfix">
+            <form action="#" name="tb_regist" class="fl">
+                <div class="title clearfix">
+                    <h3 class="fl">注册也买酒</h3>
+                    <a href="#" class="fr">您可以使用QQ、支付宝、新浪微博登录</a>
+                </div>
+                <div class="fc clearfix">
+                    <label for="tel">手机号码:</label>
+                    <input type="text" placeholder="请输入手机号码" id="tel"/><br />
+                    <label for="code">验证码:</label>
+                    <input type="text" placeholder="请输入验证码" id="code"/>
+                    <span class="getCode">验证码</span>
+                    <br />
+                    <label for="tel_code">短信验证码:</label>
+                    <input type="text" placeholder="请输入短信验证码" id="tel_code"/><span class="get_telcode">获取短信验证码</span>
+                    <br />
+                    <label for="pwd1">密码:</label>
+                    <input type="text" placeholder="密码请设为6-16位字母或数字 " id="pwd1"/><br />
+                    <label for="pwd2">密码确认:</label>
+                    <input type="text" placeholder="请再次输入登录密码" id="pwd2"/><br />
+                </div>
+                <div class="fb">
+                    <label for="isVip">
+                        <input type="checkbox" id="isVip"/>
+                        我有VIP升级吗
+                        </label><br />
+                    <label for="isAgree">
+                        <input type="checkbox" id="isAgree"/>
+                        我已满18岁并接受
+                        <a href="#">《也买酒服务条款》</a>
+                    </label>
+                </div>
+                
+                <button class="btn_sub">注册完成</button>
+            </form>
+            <i class="fl"></i>
+        </div>
+    </div>
+    <footer></footer>
 </body>
 </html>

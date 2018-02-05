@@ -2,3 +2,123 @@
   padding: 20px 0;
   border-bottom: 2px solid #BB0F2E;
 }
+
+#main {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+#main form {
+  background: #F8F8F5;
+  width: 400px;
+  height: 538px;
+  padding: 5px 16px 28px 20px;
+  border: 1px solid #ccc;
+  margin-top: 22px;
+}
+
+#main form .title {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 43px;
+}
+
+#main form .title h3 {
+  height: 52px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 52px;
+  color: #333;
+}
+
+#main form .title a {
+  font-size: 12px;
+  color: #0066CC;
+  margin-top: 30px;
+}
+
+#main form .fc label {
+  padding-left: 1px;
+  color: #363636;
+  font-size: 14px;
+  width: 80px;
+  display: block;
+  float: left;
+  height: 42px;
+  line-height: 42px;
+  text-align: right;
+  margin-bottom: 18px;
+}
+
+#main form .fc input {
+  padding-left: 10px;
+  margin-bottom: 18px;
+  float: left;
+  width: 282px;
+  height: 42px;
+  border-top: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+  background: #fff;
+}
+
+#main form .fc #code, #main form .fc #tel_code {
+  width: 180px;
+}
+
+#main form .fc span {
+  display: block;
+  float: left;
+}
+
+#main form .fc .getCode, #main form .fc .get_telcode {
+  margin-bottom: 20px;
+  width: 100px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+}
+
+#main form .fc .get_telcode {
+  background: #F45F03;
+  color: #fff;
+  font-size: 12px;
+}
+
+#main form .fb label {
+  width: 360px;
+  height: 14px;
+  font-size: 14px;
+  display: block;
+}
+
+#main form .fb label:first-child {
+  padding-left: 70px;
+}
+
+#main form .fb label:last-child {
+  padding-left: 78px;
+}
+
+#main form button {
+  display: block;
+  width: 356px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  margin-top: 28px;
+  color: #fff;
+  font-size: 14px;
+  background: #BB0E30;
+  cursor: pointer;
+}
+
+#main i {
+  display: block;
+  width: 790px;
+  height: 480px;
+  background: url(../img/regist_bg.png) no-repeat;
+}
+
+footer {
+  margin-top: 10px;
+}

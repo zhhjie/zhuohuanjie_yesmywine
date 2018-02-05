@@ -1,0 +1,74 @@
+#main{
+    .main_t{
+        height:30px;
+        line-height: 30px;
+        font-size:12px;
+        color:#333333；
+    }
+    .left{
+        width:200px;
+        .all_sort{
+            margin-top:8px;
+            h3{
+                height:40px;
+                background-color:#E8E3DD;
+                padding-left:20px;
+                font-size:14px;
+                color:#333333;
+                line-height: 40px;
+                font-weight:bold;
+            }     
+        }
+        .collect{
+            position:relative;
+            a{  
+                
+                display:block;
+                line-height: 40px;
+                background:#FBFAF9;
+                border-bottom:1px solid #ccc;
+                padding-left:40px;
+                color:#333333;
+            }
+            i{
+                display:block;
+                width: 20px;
+                height:20px;
+                background:url(img/sprite.fw.png) no-repeat;
+                background-position:-130px -220px;
+                position:absolute;
+                left:10px;
+                top:10px;
+            }
+            // height: 40px;
+            ul{
+                li{
+                    a{
+                        color:#666666;
+                        padding-left:42px;
+                        height:28px;
+                        line-height: 28px;
+                        font-size:12px;
+                        border-bottom:none;
+                    }
+                    &:last-child{
+                        border-bottom:1px solid #ccc;
+                    }
+                }
+            }
+
+        }
+        .ranking{
+            li a{
+                display:block;
+                height:46px;
+                line-height: 46px;
+                padding-left:35px;
+                border-bottom:1px solid #ccc;
+                font-size:12px;
+                color:#333;
+            }
+            
+        }
+    }
+}

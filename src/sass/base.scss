@@ -226,6 +226,9 @@ $mainColor:#D3161B;
             color:#fff;
             font-size:14px;
         }
+        &:hover .shopcart-sum{
+            display:block;
+        }
         &:before,&:after{
             content:'';
             display:block;
@@ -267,7 +270,38 @@ $mainColor:#D3161B;
                 top:16px;
             }
         }
-
+        .shopcart-sum{
+            display:none;
+            width:250px;
+            height:55px;
+            position:absolute;
+            background:#fff;
+            left:-126px;
+            top:67px;
+            z-index:1000;
+            .btn-viewcart{
+                margin-right:10px;
+                background:#BB0F2E;
+                position:absolute;
+                right:0;
+                top:-20px;
+                float: right;
+                width: 100px;
+                height:28px;
+                font-size:12px;
+                line-height: 28px;
+                text-align:center;
+                border-radius:25px;
+            }
+            p{
+                position:absolute;
+                left:0;
+                top:0;
+                float: left;
+                font-size:12px;
+                line-height: 24px;
+            }
+        }
     }
 }
 //
