@@ -1,22 +1,44 @@
 //轮播图
 $mainColor:#D3161B;
+// html,body{
+//     width:100%;
+//     height:100%;
+//     // overflow-x:hidden;
+// }
 #banner{
     height:500px;
-    transform: scale(1);
     position:relative;
-    width:100%;
     overflow:hidden;
-    img{
-        transition:2s all;
-    }
     &:hover img{
         transform: scale(1.04);
     }
     img{
-        width:1920px;
+        transition:2s all;
+    }
+    .box{
+        // left:-300px;
         position:absolute;
-        left:50%;
-        margin-left:-960px;
+        overflow:hidden;
+        img{
+            width:1920px;
+        }
+        ul{
+            margin-left:-300px;
+            position:absolute;
+        }
+        .page{
+            z-index: 100;
+            li{
+                float: left;
+                
+                background:#86685E;
+                color:#fff;
+            }
+            .active{
+                background:$mainColor;
+            }
+        }
+
     }
 }
     //焦点导航
@@ -138,7 +160,7 @@ $mainColor:#D3161B;
         .main1_r{
             width:990px;
             margin-left: 7px;
-            .title {
+            .tag_rec {
                 border-bottom:2px solid #D3161B;
                 li{
                    float: left;
@@ -160,8 +182,13 @@ $mainColor:#D3161B;
                        line-height: 20px;
                    }
                 }
+                .active{
+                    background-color: $mainColor;
+                    color:#fff;
+                }
             }
-            .box{
+
+            .tagInfo{
                 height:308px;
                 overflow:hidden;
                 margin:10px 0;
@@ -387,6 +414,29 @@ $mainColor:#D3161B;
         }  
         .carousel_r{
             width:235px;
+        }
+        .carousel_c{
+            width:760px;
+            position:relative;
+            overflow:hidden;
+            ul{
+                position:absolute;
+                left:0;
+                li{
+                    float: left;    
+                }
+            }
+            .page{
+                z-index: 100;
+                height:30px;
+                li{
+                    background:#86685E;
+                    color:#fff;
+                }
+                .active{
+                    background:$mainColor;
+                }
+            }
         }
     }   
     
@@ -707,7 +757,7 @@ $mainColor:#D3161B;
             }
             .tasting{
                 padding-left: 22px;
-                padding-bottom:18px;
+                padding-bottom:34px;
                 font-size: 14px;
                 line-height: 26px;   
                 a{
@@ -721,12 +771,167 @@ $mainColor:#D3161B;
             h2{
                 background:#A7E1F6;
             }
+            ul {
+                padding-left:10px;
+                border:1px solid #DCDCDC;
+                li{
+                    padding-top:16px;
+                    font-size:12px;
+                    padding-left:100px;
+                    position:relative;
+                    height:296px;
+
+                    &>a{
+                        display:block;
+                        height:234px;
+                                            }
+                    img{
+                        height:234px;
+                    }
+                    p{
+                        position: absolute;
+                        left:0;
+                        top:52px;
+                        ins{
+                            text-decoration:none;
+                            display:block; 
+                            height:42px;
+                            width:124px;
+                            border:1px solid #FE9B1A;
+                            color:#FE9B1A;
+                            border-radius:5px;
+                            margin-bottom:18px;
+                            line-height: 42px;
+                            padding-left:8px;
+                            position:relative;
+                        }
+                    }
+                    dl{
+                        width:245px;
+                        color:#7D7D7D;
+                        .price{
+                            color:$mainColor;
+                            strong{
+                                font-size:26px;
+
+                            }
+                        }
+                        dt{
+                            line-height: 24px;
+                        }
+                        a{
+                            color:#333333;
+                            font-size:14px;
+
+                        }
+                    }
+                }
+            }
+            
         }
         .interest_r{
+            border:1px solid #ccc;
             width: 320px;
             h2{
                 background-color: #E9AEBA;
             }
+            dt{
+                height:90px;
+                padding:10px;
+                border-bottom:1px dashed #ccc;
+                a{
+                    img{
+                        border-radius:50%;
+                        margin:0 24px;
+                    }
+                    span{
+                        color:#666666;
+                        display:block;
+                        height:30px;
+                        font-size:16px;
+                    }
+                }  
+            }
+            dd{
+                padding:14px 26px 0 16px;
+                overflow:hidden;
+                font-size:14px;
+                position:relative;
+                img{
+                    height:118px;
+                    float: left;
+                    margin-right:8px;
+                }
+                a{
+                    color:#666666;
+                    .price{
+                        color:$mainColor;
+                        strong{font-size:26px;}
+                    }
+                }
+                label{
+                    display:block;
+                    width: 56px;
+                    height: 24px;
+                    background:url(img/sprite.fw.png) no-repeat;
+                    background-position:-330px -80px;
+                    position:absolute;
+                    right:55px;
+                    bottom:5px;
+                    
+                }
+                .tt{ 
+                    background:#F4F4F4;
+                    height:40px;
+                    line-height: 40px;
+                    font-size: 16px;
+                    padding-left:10px;    
+                }
+                .reason{
+                    display:block;
+                    margin:10px 10px 16px 10px;
+                }
+            }
         }
     }
+    .special{
+        margin-top:28px;
+        a{
+            display:block;
+        }
+        ul{
+            width:742px;
+            li{
+                float: left;
+                margin-left:7px;
+                &:nth-child(3),&:nth-child(4){
+                    margin-top:8px;
+                }
+            }
+        }
+    }
+    .brand{
+        margin-top:28px;
+        .bb{
+            li{
+                height: 132px;
+                width: 240px;
+                border:1px solid #ccc;
+                padding:12px;  
+                a{
+                    height:112px;
+                    widows: 220px;
+                    overflow:hidden;
+                    display:block;
+                }
+            }         
+        }
+    }
+    .wine_freind{
+        margin-top:28px;
+        li{
+            width:315px;
+        }
+    }
+
 }

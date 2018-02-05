@@ -18,6 +18,7 @@ var browserSync = require('browser-sync');
 
 gulp.task('server',function(){
     browserSync({
+        port:1001,
         proxy:'http://localhost:1000',
 
         files:['./src/**/*.html','./src/css/*.css','./src/js/*.js','./src/img/*.jpg','./src/css/img/*.png']

@@ -1,13 +1,7 @@
 #banner {
   height: 500px;
-  transform: scale(1);
   position: relative;
-  width: 100%;
   overflow: hidden;
-}
-
-#banner img {
-  transition: 2s all;
 }
 
 #banner:hover img {
@@ -15,10 +9,35 @@
 }
 
 #banner img {
-  width: 1920px;
+  transition: 2s all;
+}
+
+#banner .box {
   position: absolute;
-  left: 50%;
-  margin-left: -960px;
+  overflow: hidden;
+}
+
+#banner .box img {
+  width: 1920px;
+}
+
+#banner .box ul {
+  margin-left: -300px;
+  position: absolute;
+}
+
+#banner .box .page {
+  z-index: 100;
+}
+
+#banner .box .page li {
+  float: left;
+  background: #86685E;
+  color: #fff;
+}
+
+#banner .box .page .active {
+  background: #D3161B;
 }
 
 .lon_nav {
@@ -153,11 +172,11 @@
   margin-left: 7px;
 }
 
-#main .recommend .main1_r .title {
+#main .recommend .main1_r .tag_rec {
   border-bottom: 2px solid #D3161B;
 }
 
-#main .recommend .main1_r .title li {
+#main .recommend .main1_r .tag_rec li {
   float: left;
   height: 60px;
   padding-left: 18px;
@@ -168,19 +187,24 @@
   border-right: 2px solid #fff;
 }
 
-#main .recommend .main1_r .title li h5 {
+#main .recommend .main1_r .tag_rec li h5 {
   margin-top: 4px;
   font-size: 22px;
   font-weight: bold;
   line-height: 30px;
 }
 
-#main .recommend .main1_r .title li p {
+#main .recommend .main1_r .tag_rec li p {
   font-size: 12px;
   line-height: 20px;
 }
 
-#main .recommend .main1_r .box {
+#main .recommend .main1_r .tag_rec .active {
+  background-color: #D3161B;
+  color: #fff;
+}
+
+#main .recommend .main1_r .tagInfo {
   height: 308px;
   overflow: hidden;
   margin: 10px 0;
@@ -433,6 +457,35 @@
 
 #main .carousel .carousel_r {
   width: 235px;
+}
+
+#main .carousel .carousel_c {
+  width: 760px;
+  position: relative;
+  overflow: hidden;
+}
+
+#main .carousel .carousel_c ul {
+  position: absolute;
+  left: 0;
+}
+
+#main .carousel .carousel_c ul li {
+  float: left;
+}
+
+#main .carousel .carousel_c .page {
+  z-index: 100;
+  height: 30px;
+}
+
+#main .carousel .carousel_c .page li {
+  background: #86685E;
+  color: #fff;
+}
+
+#main .carousel .carousel_c .page .active {
+  background: #D3161B;
 }
 
 #main .goodslist .left {
@@ -790,7 +843,7 @@
 
 #main .interest .interest_l .tasting {
   padding-left: 22px;
-  padding-bottom: 18px;
+  padding-bottom: 34px;
   font-size: 14px;
   line-height: 26px;
 }
@@ -808,10 +861,189 @@
   background: #A7E1F6;
 }
 
+#main .interest .interest_c ul {
+  padding-left: 10px;
+  border: 1px solid #DCDCDC;
+}
+
+#main .interest .interest_c ul li {
+  padding-top: 16px;
+  font-size: 12px;
+  padding-left: 100px;
+  position: relative;
+  height: 296px;
+}
+
+#main .interest .interest_c ul li > a {
+  display: block;
+  height: 234px;
+}
+
+#main .interest .interest_c ul li img {
+  height: 234px;
+}
+
+#main .interest .interest_c ul li p {
+  position: absolute;
+  left: 0;
+  top: 52px;
+}
+
+#main .interest .interest_c ul li p ins {
+  text-decoration: none;
+  display: block;
+  height: 42px;
+  width: 124px;
+  border: 1px solid #FE9B1A;
+  color: #FE9B1A;
+  border-radius: 5px;
+  margin-bottom: 18px;
+  line-height: 42px;
+  padding-left: 8px;
+  position: relative;
+}
+
+#main .interest .interest_c ul li dl {
+  width: 245px;
+  color: #7D7D7D;
+}
+
+#main .interest .interest_c ul li dl .price {
+  color: #D3161B;
+}
+
+#main .interest .interest_c ul li dl .price strong {
+  font-size: 26px;
+}
+
+#main .interest .interest_c ul li dl dt {
+  line-height: 24px;
+}
+
+#main .interest .interest_c ul li dl a {
+  color: #333333;
+  font-size: 14px;
+}
+
 #main .interest .interest_r {
+  border: 1px solid #ccc;
   width: 320px;
 }
 
 #main .interest .interest_r h2 {
   background-color: #E9AEBA;
+}
+
+#main .interest .interest_r dt {
+  height: 90px;
+  padding: 10px;
+  border-bottom: 1px dashed #ccc;
+}
+
+#main .interest .interest_r dt a img {
+  border-radius: 50%;
+  margin: 0 24px;
+}
+
+#main .interest .interest_r dt a span {
+  color: #666666;
+  display: block;
+  height: 30px;
+  font-size: 16px;
+}
+
+#main .interest .interest_r dd {
+  padding: 14px 26px 0 16px;
+  overflow: hidden;
+  font-size: 14px;
+  position: relative;
+}
+
+#main .interest .interest_r dd img {
+  height: 118px;
+  float: left;
+  margin-right: 8px;
+}
+
+#main .interest .interest_r dd a {
+  color: #666666;
+}
+
+#main .interest .interest_r dd a .price {
+  color: #D3161B;
+}
+
+#main .interest .interest_r dd a .price strong {
+  font-size: 26px;
+}
+
+#main .interest .interest_r dd label {
+  display: block;
+  width: 56px;
+  height: 24px;
+  background: url(img/sprite.fw.png) no-repeat;
+  background-position: -330px -80px;
+  position: absolute;
+  right: 55px;
+  bottom: 5px;
+}
+
+#main .interest .interest_r dd .tt {
+  background: #F4F4F4;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+#main .interest .interest_r dd .reason {
+  display: block;
+  margin: 10px 10px 16px 10px;
+}
+
+#main .special {
+  margin-top: 28px;
+}
+
+#main .special a {
+  display: block;
+}
+
+#main .special ul {
+  width: 742px;
+}
+
+#main .special ul li {
+  float: left;
+  margin-left: 7px;
+}
+
+#main .special ul li:nth-child(3), #main .special ul li:nth-child(4) {
+  margin-top: 8px;
+}
+
+#main .brand {
+  margin-top: 28px;
+}
+
+#main .brand .bb li {
+  height: 132px;
+  width: 240px;
+  border: 1px solid #ccc;
+  padding: 12px;
+}
+
+#main .brand .bb li a {
+  height: 112px;
+  widows: 220px;
+  overflow: hidden;
+  display: block;
+}
+
+#main .wine_freind {
+  margin-top: 28px;
+}
+
+#main .wine_freind li {
+  width: 315px;
 }

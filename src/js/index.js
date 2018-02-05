@@ -1,8 +1,72 @@
 
 require(['config'],function(){
-    require(['jquery'],function($){
+    require(['jquery','carousel','common'],function($,ca,co){
         $('#pageHeader').load('html/header.html');
         $('#pageFooter').load('html/footer.html');
-        
+        var b_width = $(window).width();
+        /*
+            轮播图
+         */
+        $('#banner').css('width',b_width);
+        $('.box').carousel({
+            imgs:[
+                '../img/banner1_1.jpg',
+                '../img/banner1_2.jpg',
+                '../img/banner1_3.jpg',
+                '../img/banner1_4.jpg',
+                '../img/banner1_5.jpg',
+                '../img/banner1_6.jpg',
+                '../img/banner1_1.jpg',
+                ],
+            'height':'500',
+            'width':'1920',
+        }).show();
+        $('.box').css('width',b_width);
+        $('.xo_box').carousel({
+            imgs:[
+                '../img/banner3_1.jpg',
+                '../img/banner3_2.jpg',
+                '../img/banner3_3.jpg',
+                '../img/banner3_4.jpg',
+                '../img/banner3_5.jpg',
+                '../img/banner3_1.jpg',
+            ],
+            'height':'252',
+            'width':'760',
+        });
+        $('.china_box').carousel({
+            imgs:[
+                '../img/banner4_1.jpg',
+                '../img/banner4_2.jpg',
+                '../img/banner4_3.jpg',
+                '../img/banner4_1.jpg',
+            ],
+            'height':'252',
+            'width':'760',
+        });
+        $('.old_box').carousel({
+            imgs:[
+                '../img/banner5_1.jpg',
+                '../img/banner5_2.jpg',
+                '../img/banner5_1.jpg',
+            ],
+            'height':'252',
+            'width':'760',
+        });
+        $('.set_box').carousel({
+            imgs:[
+                '../img/banner6_1.jpg',
+                '../img/banner6_2.jpg',
+                '../img/banner6_1.jpg',
+            ],
+            'height':'252',
+            'width':'760',
+        });
+
+        var $tab = $('.tag_rec');
+
+        console.log(co);
+        co.exchange($tab);
+
     })
 })

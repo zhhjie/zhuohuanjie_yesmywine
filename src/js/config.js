@@ -1,6 +1,11 @@
 require.config({
     paths:{
-        'jquery':'../lib/jquery-3.3.1'
-
+        'jquery':'../lib/jquery-3.3.1',
+        'carousel':'../lib/jQuery.carousel/jQuery.zhjcarousel',
+        'common':'../js/common',
+    },
+    shim:{
+        'carousel':['jquery'],
+        'common':['jquery']
     }
 });

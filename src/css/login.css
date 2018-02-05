@@ -1,0 +1,102 @@
+#head {
+  padding: 20px 0;
+  border-bottom: 2px solid #BB0F2E;
+}
+
+#main .container {
+  padding: 34px 5px 55px 134px;
+}
+
+#main .lg_r {
+  width: 406px;
+  height: 395px;
+  border: 1px solid #ccc;
+}
+
+#main .lg_r form {
+  padding-left: 36px;
+  border-bottom: 1px dashed #ccc;
+}
+
+#main .lg_r form h3 {
+  font-size: 20px;
+  line-height: 72px;
+  font-weight: bold;
+  color: #796D67;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+#main .lg_r form .uname, #main .lg_r form .pwd {
+  height: 34px;
+  width: 300px;
+  font-size: 14px;
+  padding-left: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+}
+
+#main .lg_r form label {
+  font-size: 12px;
+}
+
+#main .lg_r form button {
+  width: 300px;
+  height: 40px;
+  color: #fff;
+  background: #CC0000;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 18px;
+}
+
+#main .lg_r form p {
+  line-height: 42px;
+  font-size: 12px;
+}
+
+#main .lg_r form p a {
+  color: #B2E8FF;
+}
+
+#main .lg_r .others {
+  margin-left: 10px;
+  font-size: 12px;
+  line-height: 36px;
+  color: #999999;
+}
+
+#main .lg_r .icon {
+  position: relative;
+  margin-left: 38px;
+}
+
+#main .lg_r a i {
+  display: block;
+  width: 34px;
+  height: 34px;
+  background: url(img/sprite.fw.png) no-repeat;
+  background-position: 0 -250px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#main .lg_r a:nth-child(2) i {
+  background-position: -50px -250px;
+  left: 42px;
+}
+
+#main .lg_r a:nth-child(3) i {
+  background-position: -100px -250px;
+  left: 84px;
+}
+
+#main .lg_r a:nth-child(4) i {
+  background-position: -150px -250px;
+  left: 124px;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+}
