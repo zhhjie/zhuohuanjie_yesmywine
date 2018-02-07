@@ -7,6 +7,7 @@
     }
     .left{
         width:200px;
+        //所有分类
         .all_sort{
             margin-top:8px;
             h3{
@@ -19,6 +20,7 @@
                 font-weight:bold;
             }     
         }
+
         .collect{
             position:relative;
             a{  
@@ -58,17 +60,387 @@
             }
 
         }
+        //一周销量排行
         .ranking{
-            li a{
-                display:block;
-                height:46px;
-                line-height: 46px;
-                padding-left:35px;
-                border-bottom:1px solid #ccc;
-                font-size:12px;
-                color:#333;
+            .item {
+                position:relative;
+                a{
+                    display:block;
+                    height:46px;
+                    line-height: 46px;
+                    padding-left:35px;
+                    border-bottom:1px solid #ccc;
+                    font-size:12px;
+                    color:#333;   
+                }    
+                .prod-name span{display:none}  
+                .prod-img,.prod-price{
+                    display:none;
+                }
+                em{
+                    display:block;
+                    width: 20px;
+                    height: 20px;
+                    position:absolute;
+                    background:#D8D9D7;
+                    color:#5B473B;
+                    left:5px;
+                    top:14px;
+                    line-height: 20px;
+                    text-align:center;
+                    font-weight:bold;
+                    font-size:14px;
+                    &:after{
+                        display:block;
+                        content:"";
+                        width: 0;
+                        height: 0;
+                        border:5px solid #fff;
+                        border-left-color:#D8D9D7;
+                        position:absolute;
+                        right:-10px;
+                        top:5px;
+                    }
+                }
             }
-            
+            .hot {
+                em{
+                    color:#fff;
+                    background:#C53F4C;
+                    &:after{
+                        border-left-color:#C53F4C;
+                    }
+                }
+            }
+
+        }
+        //为你推荐
+        .recomment{
+            padding:0 20px 0 10px;
+            .item{
+                margin-top:10px;
+                padding-bottom:12px;
+                border-bottom:1px dashed #ccc;
+            }
+            .prod-img{
+                display:block;
+                text-align:center;
+            }
+            .prod-name{
+                font-size:12px;
+                line-height: 26px;
+                color:#333;
+                span{
+                    display:block;
+                    color:#7D6695;
+                }
+            }
+            .prod-price{
+                font-size:12px;
+                color:#AA1F04;
+                display:block;
+                text-align:center;
+            }
+        }
+    }
+    .right{
+        width:993px;
+        margin:8px 0 0 7px;
+        .right_t{
+            padding-top:22px;
+            border:1px solid #ccc;
+            .history{
+                li{
+                    float: left;
+                    width: 331px;
+                    padding-bottom:20px;
+                    .prod-img{
+                        display:block;
+                        margin:0 14px;
+                    }
+                    .prod-name{
+                        font-size:12px;
+                        display:block;
+                        line-height: 20px;
+                    }
+                    .prod-price{
+                        margin-top:40px;
+                        display:block;
+                        color:#AA1F04;
+                        font-size:12px;
+                        strong{
+                            font-size:14px;
+                            font-weight:normal;
+                        }
+                    }
+                    .btn-buy{
+                        float: left;
+                        display:block;
+                        width: 80px;
+                        height: 20px;
+                        line-height: 20px;
+                        text-align:center;
+                        font-size:12px;
+                        color:#fff;
+                        background:#AA1F04;
+                    }
+                }
+            }    
+            .selector_item{
+                border-top:1px solid #ccc;
+                height:42px;
+                font-size:12px;
+                h5{line-height: 42px;margin-left:45px;}
+                .select_price{
+                    li{
+                        float: left;
+                        line-height: 42px;
+                        margin-right:20px;
+                        &:hover span{
+                            color:#fff;
+                            background:#C63F4E;
+                            cursor:pointer;
+                        }
+                        &:first-child span{
+                            color:#fff;
+                            background:#C63F4E;
+                        }
+                    }
+                }
+                .select{
+                    margin-top:10px;
+                    button,input{
+
+                        width:42px;
+                        height:22px;
+                        border:1px solid #ccc;
+                        text-align:center;
+                        font-size:12px;
+                    }
+                    button{
+                        margin:0 22px 0 5px;
+                        font-size:14px;
+                        background:#F7F5F2;
+                    }
+                }
+                border-bottom:1px solid #ccc;
+            }
+        }
+        .tab_selector{
+            border-bottom:2px solid #9B303B;
+            position:relative;
+            .tabName{
+                position:absolute;
+                left:0px;
+                top:10px;
+                li{
+                    float: left;
+                    margin-right:1px;
+                    a{
+                        display:block;
+                        width: 100px;
+                        height:42px;
+                        line-height: 42px;
+                        font-size:12px;
+                        color:#444444;
+                        background:#F0EDE8;
+                        text-align:center;
+                    }
+                    .seleted{
+                        background:#9B303B;
+                        color:#fff;
+                    }
+                }
+            }
+            .page{
+                height:52px;
+                line-height: 52px;
+                font-size:12px;
+                .sum{
+                    font-weight:bold;
+                }
+                .pageNo{
+                    margin:0 8px;
+                }
+                .next,.pre{
+                    margin-right:10px;
+                    float: right;
+                    margin-top:13px;
+                    display:block;
+                    width:30px;
+                    height:30px;
+                    border:1px solid #AA998A;
+                    background:#F7F5F2;
+                    font-size:16px;
+                    text-align:center;
+                    line-height: 30px;
+                }
+            }
+        }
+        .check-mod{
+            border:1px solid #ccc;
+            width:100%;
+            .sort_select{
+                width:390px;
+                margin-left:12px;
+                li{
+                    float: left;
+                    width:60px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align:center;
+                    font-size:12px;
+                    color:#8C8C8C;
+                    border:1px solid #ccc;
+                    margin-right:5px;
+                }
+                .active{
+                    background:#C63F4E;
+                    color:#fff;
+                }
+                margin-top:15px;
+            }
+            .other_select{
+                padding-right:14px;
+                li{
+                    float: left;
+                    height:34px;
+                    line-height: 34px;
+                    margin:15px 5px;
+                    font-size:12px;
+                    color:#857967;
+                    input{
+                        width:16px;
+                        height: 16px;
+                    }
+                    select{
+                        color:#857967;
+                    }
+                }
+                .mode{
+                    width: 60px;
+                    height: 34px;
+                    line-height: 34px;
+                    padding-left:24px;
+                    border:1px solid #ccc;
+                    position:relative;
+                    &:before{
+                        position:absolute;
+                        left:6px;
+                        top:10px;
+                        display:block;
+                        content:"";
+                        width:12px;
+                        height: 12px;
+                        background:url(img/sprite.fw.png) no-repeat;
+                        background-position:-190px -220px;  
+                    }
+                }
+                .liebiao:before{
+                    background-position:-210px -220px;  
+                }
+
+                .active{
+                    color:#f00;
+                    border-color:#f00;
+                }
+            }
+        }
+        .goodsList{
+            margin-top:8px;
+            .item{
+                margin-right:8px;
+                border:2px solid #DDDBD2;
+                width:190px;
+                height:454px;
+                transition:all 2s;
+                float: left;
+                dt{
+                    a{
+                        width:190px;
+                        height:240px;
+                        padding-top:16px;
+                        display:block;
+                        text-align:center;
+                    }
+                }
+                .base{
+                    background:#F8F8F5;
+                    padding-left:10px;
+                    .pname{
+                        font-size:12px;
+                        color:#444444;
+                    }
+                    .promo{
+                        display:block;
+                        color:#B7262B;
+                    }
+                    .price{
+                        margin-top:10px;
+                        position:relative;
+                        .mian{
+                            display:block;
+                            height: 30px;
+                            width: 26px;
+                            background:url(img/sprite.fw.png) no-repeat;
+                            background-position:-240px -220px;
+                            position:absolute;
+                            left:0;
+                            top:2px;
+                        }
+                        .minprice{
+                            margin-left:35px;
+                            strong{
+                                font-size:20px;
+                            }      
+                        }
+                    }
+                }
+                .action{
+                    background:#F8F8F5;
+                    padding:20px 0 5px 10px;
+                    
+                    p{
+                        display:none;
+                        a{
+                            display:block;
+                            width: 85px;
+                            height: 26px;
+                        }
+                    }
+                    .btn-addcart{
+                        display:block;
+                        width: 165px;
+                        height: 26px;
+                        background:#DD3939;
+                        color:#fff;
+                        line-height: 26px;
+                        font-size:12px;
+                        text-align:center;
+                        &:hover{
+                            opacity:0.8;
+                        }
+                    }
+                }
+                .sum{
+                    padding-top:7px;
+                    span{
+                        display:block;
+                        float: left;
+                        width:62px;
+                        height: 46px;
+                        font-size:12px;
+                        text-align:center;
+                    }
+                    strong{
+                        font-weight:normal;
+                        display:block;
+                    }
+                }
+                &:hover{
+                    border-color:#9B303B;
+                }
+            }
         }
     }
 }

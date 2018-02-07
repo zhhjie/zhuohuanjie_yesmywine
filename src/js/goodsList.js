@@ -2,9 +2,9 @@
 * @Author: Marte
 * @Date:   2018-02-05 19:44:59
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-02-05 20:40:03
+* @Last Modified time: 2018-02-07 12:13:01
 */
-
+    
 require(['config'],function(){
     require(['jquery'],function($){
         $('header').load('../html/header.html',function(){
@@ -14,18 +14,28 @@ require(['config'],function(){
             $nav.children('ul').css({
                 'display':'none',
             });
+
+            $('.nav').css('background','#7E0001');
+
             $nav.mouseover(function(){
                 $h3.css('background','#3f241f');
                 $nav.children('ul').css('display','block');
                 $nav.find('ul').css({
                     'background':'#624b40',
                     'color':'#ffffff',
-                })
-                $h3.find('a').css('color','#ffffff')
+                });
+                $nav.find('a').css('color','#ffffff')
             }).mouseout(function(){
                 $nav.css('background','#624b40');
                 $nav.children('ul').css('display','none')
             })
-        })
-    })
+        });
+        $('footer').load('../html/footer.html');
+
+        $('#side').load('../html/rightSide.html');
+
+        require(['rightSide']);
+
+        
+    });
 })

@@ -115,12 +115,17 @@ s, i, em {
 .head_bar {
   background-color: #ECE7E3;
   border-bottom: 1px solid #ccc;
+  width: 100%;
 }
 
 .head_bar ul li {
   float: left;
   color: #85726C;
   font-size: 12px;
+}
+
+.head_bar .userinfos {
+  width: 260px;
 }
 
 .head_bar .userinfos li:first-child {
@@ -149,6 +154,10 @@ s, i, em {
   height: 14px;
   margin-top: 7px;
   text-align: center;
+}
+
+.head_bar .sitelinks {
+  width: 350px;
 }
 
 .head_bar .sitelinks i {

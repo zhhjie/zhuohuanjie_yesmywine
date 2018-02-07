@@ -5,18 +5,19 @@
     <title>选酒中心</title>
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/goodsList.css" />
+    <link rel="stylesheet" type="text/css" href="../css/rightSide.css" />
     <script type="text/javascript" src="../js/require.js" data-main="../js/goodsList"></script>
 </head>
 <body>
     <header></header>
     <div id="main">
-        <div class="container">
+        <div class="container clearfix">
             <div class="main_t">
                 <a href="#">首页</a>
                 <span>&gt;选酒中心</span>
             </div>
         
-            <div class="left">
+            <div class="left fl">
                 <div class="all_sort">
                     <h3>所有分类</h3>
                 </div>
@@ -125,15 +126,266 @@
                     <h3>一周销售排行版</h3>
                 </div>
                 <ul class="ranking">
-                    <li><a href="#">拉昂城堡干红葡萄酒</a></li>
+                    <li class="hot item" >
+                        <em>1</em>
+                        <a title="拉昂城堡干红葡萄酒" class="prod-img" href="#">
+                            <img width="60" height="98" border="0" alt="" onerror="imgError(this)" src="https://img18.yesmyimg.com/n/420/145/5145420/4463015_60x98.png" style="opacity: 1;">
+                        </a>
+                        <a title="拉昂城堡干红葡萄酒" class="prod-name" href="#">
+                            拉昂城堡干红葡萄酒
+                            <span>La Bastide Laurent</span>
+                        </a>
+                        <span class="prod-price">
+                            ¥<strong>59.0</strong>
+                        </span>
+                    </li>
                 </ul>
                 <div class="all_sort">
                     <h3>为你推荐</h3>
                 </div>
-                <ul class="recomment"></ul>
-
+                <ul class="recomment">
+                    <li class="item" >
+                        <a title="康纳斯顿梅洛干红葡萄酒（黑标）" class="prod-img" href="#">
+                            <img width="60" height="98" border="0" alt="" onerror="imgError(this)" src="https://img18.yesmyimg.com/n/420/145/5145420/4463015_60x98.png" style="opacity: 1;">
+                        </a>
+                        <a title="康纳斯顿梅洛干红葡萄酒（黑标）" class="prod-name" href="#">
+                            康纳斯顿梅洛干红葡萄酒（黑标）
+                            <span>CornerStone Merlot Black Label</span>
+                        </a>
+                        <span class="prod-price">
+                            ¥<strong>59.0</strong>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="right fl clearfix">
+                <div class="right_t">
+                    <ul class="history clearfix">
+                        <li>
+                            <a href="detail.html" title="神牛干红葡萄酒 6支装" class="prod-img fl">
+                                <img src="https://img18.yesmyimg.com/n/9/231/6231009/0553994_110x180.png" onerror="imgError(this)" width="60" height="98" border="0" alt="神牛干红葡萄酒 6支装" style="opacity: 1;">
+                            </a>
+                            <a href="detail.html" title="神牛干红葡萄酒 6支装" class="prod-name">
+                                神牛干红葡萄酒 6支装
+                            <span title="" class="en"></span>
+                        </a>
+                            <span class="prod-price">
+                                    ¥<strong>99.0</strong>
+                            </span>
+                            <span class="btn-buy" title="加入购物车">
+                                 加入购物车
+                            </span>
+                        </li>
+                        <li>
+                            <a href="detail.html" title="神牛干红葡萄酒 6支装" class="prod-img fl">
+                                <img src="https://img18.yesmyimg.com/n/9/231/6231009/0553994_110x180.png" onerror="imgError(this)" width="60" height="98" border="0" alt="神牛干红葡萄酒 6支装" style="opacity: 1;">
+                            </a>
+                            <a href="detail.html" title="神牛干红葡萄酒 6支装" class="prod-name">
+                                神牛干红葡萄酒 6支装
+                            <span title="" class="en"></span>
+                        </a>
+                            <span class="prod-price">
+                                    ¥<strong>99.0</strong>
+                            </span>
+                            <span class="btn-buy" title="加入购物车">
+                                 加入购物车
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="selector_item">
+                        <h5 class="fl">价格：</h5>
+                        <ul class="select_price clearfix fl">
+                            <li>
+                                <span>不限</span>
+                            </li>
+                            <li>
+                                <span>1-99元</span>
+                            </li>
+                            <li>
+                                <span>100-199元</span>
+                            </li>
+                            <li>
+                                <span>200-299元</span>
+                            </li>
+                            <li>
+                                <span>300-399元</span>
+                            </li>
+                            <li>
+                                <span>400-499元</span>
+                            </li>
+                            <li>
+                                <span>500-599元</span>
+                            </li>
+                        </ul>
+                        <div class="select fr">
+                            <input type="text" />-
+                            <input type="text" />
+                            <button class="btn-select fr">确认</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab_selector clearfix">
+                    <ul class="tabName fl">
+                        <li><a href="#">全部</a></li>
+                        <li><a href="#">特惠</a></li>
+                        <li><a href="#">整箱</a></li>
+                        <li><a href="#">组合</a></li>
+                    </ul>
+                    <div class="page fr">
+                        <span>共有<i class="sum">6714</i>件商品</span>
+                        <span class="pageNo">
+                            <i class="num">1</i>/<i class="allPage"></i>
+                        </span>
+                        <span class="next">&gt;</span>
+                        <span class="pre">&lt;</span>
+                    </div>
+                </div>
+                <div class="check-mod clearfix">
+                    <ul class="sort_select fl">
+                        <li>默认</li>
+                        <li>销量</li>
+                        <li>价格</li>
+                        <li>评论数</li>
+                        <li>上架时间</li>
+                    </ul>
+                    <ul class="other_select fr clearfix">
+                        <li>
+                            <input type="checkbox" id="ymj"/>
+                            <label for="ymj">也买酒</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="ymjsc"/>
+                            <label for="ymjsc">也买酒商城</label>
+                        </li>
+                        <li>
+                            <select name="region" id="region">
+                                <option value="广东">广东</option>
+                            </select>
+                        </li>
+                        <li class="mode active">大图</li>
+                        <li class="mode liebiao">列表</li>
+                    </ul>
+                </div>
+                <div class="goodsList">
+                    <ul class="clearfix">
+                        <li class="item">
+                            <dl>
+                                <dt>
+                                    <a href="#" class="pimg">
+                                        <img src="https://img18.yesmyimg.com/n/154/215/6215154/8466826_110x180.png" onerror="imgError(this)" width="110" height="180" alt="洛神山庄西拉赤霞珠干红葡萄酒(又名：奔富洛神山庄干红葡萄酒)" style="opacity: 1;">
+                                    </a>
+                                    <p class="promo-icon"></p>
+                                            <!-- 商品荣誉 -->
+                                    <p class="promo-icon"></p>
+                                </dt>
+                                <dd class="base">
+                                    <a href="#" class="pname" title="洛神山庄西拉赤霞珠干红葡萄酒(又名：奔富洛神山庄干红葡萄酒)">
+                                        <span class="cn">洛神山庄西拉赤霞珠干红...</span> 
+                                        <span class="en" title="Rawsons Retreat Shiraz Cabernet">Rawsons Retreat Shiraz Cabernet</span>
+                                        <span class="promo" title="免运费">免运费</span>
+                                    </a>
+                                    <p class="price">
+                                        <span class="mian fl"></span>
+                                        <!--增加立减图标-->
+                                        <span class="minprice" style="color:#CC0000">
+                                            ¥<strong style="font-family:inherit;">37.0</strong>
+                                        </span>
+                                    </p>
+                                </dd>
+                                <dd class="action">
+                                    <a href="#" class="btn-addcart">
+                                        加入购物车
+                                    </a>
+                                    <p>
+                                        <a class="btn-style btn-comm" href="javascript:void(0);">
+                                            <em>为您推荐</em>
+                                        </a>
+                                        <a href="javascript:;" class="btn-style btn-end btn-add2cart">
+                                            到货通知
+                                        </a>
+                                    </p>
+                                </dd>
+                                <dd class="sum">
+                                    <span class="ratecount">
+                                        <strong style="color:#CC0000">100%</strong>好评度
+                                    </span>
+                                    <span class="commentcount">
+                                        <a href="#">
+                                            <strong>311</strong>
+                                        </a>评论
+                                    </span>
+                                    <span class="soldnum">
+                                        <strong>97906</strong>售出
+                                    </span>
+                                </dd>
+                                <dd class="info">
+                                    <ol></ol>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="item">
+                            <dl>
+                                <dt>
+                                    <a href="#" class="pimg">
+                                        <img src="https://img18.yesmyimg.com/n/154/215/6215154/8466826_110x180.png" onerror="imgError(this)" width="110" height="180" alt="洛神山庄西拉赤霞珠干红葡萄酒(又名：奔富洛神山庄干红葡萄酒)" style="opacity: 1;">
+                                    </a>
+                                    <p class="promo-icon"></p>
+                                            <!-- 商品荣誉 -->
+                                    <p class="promo-icon"></p>
+                                </dt>
+                                <dd class="base">
+                                    <a href="#" class="pname" title="洛神山庄西拉赤霞珠干红葡萄酒(又名：奔富洛神山庄干红葡萄酒)">
+                                        <span class="cn">洛神山庄西拉赤霞珠干红...</span> 
+                                        <span class="en" title="Rawsons Retreat Shiraz Cabernet">Rawsons Retreat Shiraz Cabernet</span>
+                                        <span class="promo" title="免运费">免运费</span>
+                                    </a>
+                                    <p class="price">
+                                        <span class="mian fl"></span>
+                                        <!--增加立减图标-->
+                                        <span class="minprice" style="color:#CC0000">
+                                            ¥<strong style="font-family:inherit;">37.0</strong>
+                                        </span>
+                                    </p>
+                                </dd>
+                                <dd class="action">
+                                    <a href="#" class="btn-addcart">
+                                        加入购物车
+                                    </a>
+                                    <p>
+                                        <a class="btn-style btn-comm" href="javascript:void(0);">
+                                            <em>为您推荐</em>
+                                        </a>
+                                        <a href="javascript:;" class="btn-style btn-end btn-add2cart">
+                                            到货通知
+                                        </a>
+                                    </p>
+                                </dd>
+                                <dd class="sum">
+                                    <span class="ratecount">
+                                        <strong style="color:#CC0000">100%</strong>好评度
+                                    </span>
+                                    <span class="commentcount">
+                                        <a href="#">
+                                            <strong>311</strong>
+                                        </a>评论
+                                    </span>
+                                    <span class="soldnum">
+                                        <strong>97906</strong>售出
+                                    </span>
+                                </dd>
+                                <dd class="info">
+                                    <ol></ol>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
+    <div id="side">
+        
+    </div>
+    <footer></footer>
 </body>
 </html>

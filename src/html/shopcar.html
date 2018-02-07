@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/shopcar.css" />
+    <script type="text/javascript" src="../js/require.js" data-main="../js/shopcar"></script>
+</head>
+<body>
+    <header></header>
+    <div class="head_main">
+        <div class="container clearfix">
+           <h1 class="fl">
+                <a href="../index.html">
+                    <img src="../css/img/logo.png"/>
+                </a>
+            </h1> 
+            <div class="h_right fr">
+                <ul class="clearfix">
+                    <li class="active">
+                        <i >1</i>
+                        <span>购物车</span>
+                    </li>
+                    <li>
+                        <i>2</i>
+                        <span>确认订单信息</span>
+                    </li>
+                    <li>
+                        <i>3</i>
+                        <span>购物成功</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div class="container">  
+            <div class="tip-block">  
+                <p>
+                    <em>温馨提示：</em>也买商城订单可以合并下单啦。无论您的购物车里有几家也买商家的商品都可以合并成一张订单付款。
+                    <i class="btn-close fr">&times;</i>
+                </p>
+            </div>
+            <div class="shopcar">
+                <div class="car-top clearfix">
+                    <h3 class="fl">由也买酒配送</h3>
+                    <i class="prod-count fr">2</i>
+                </div>            
+                <div class="car-main">
+                    <div class="trTitle">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td height="34" width="8%">
+                                        <input class="e-selall selectAll selectAll_1-normal" type="checkbox" name="checkbox">
+                                         <label for="checkbox0_t" style="cursor: pointer;">全选</label>
+                                    </td>
+                                    <td class="goodsame">商品名称</td>
+                                    <td width="13%">单价</td>
+                                    <td width="13%">数量</td>                                     
+                                    <td width="13%">小计</td>
+                                    <td width="13%">&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="cartGoodsList">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="inTable" id="tbHover">
+                            <tbody>
+                                <tr class="border">
+                                    <td width="8%" class="btn_fx">
+                                        <input type="checkbox" name="goodsSelect" value="6503" class="goodsSelect" checked="checked">
+                                    </td>
+                                    <td width="8%" class="left">
+                                        <a href="/goods/6503.html" target="_blank" class="prod-img">
+                                            <img src="https://img08.yesmyimg.com/6503/0022132_60x98.JPG">
+                                        </a>
+                                    </td>
+                                    <td class="left">            
+                                        <a href="/goods/6503.html" target="_blank" class="title">松木双盒</a>
+                                        <br>
+                                            Pine double box
+                                        <br>
+                                        <span class="red"></span>
+                                        <br>
+                                        <ins></ins>
+                                    </td>
+                                    <td width="13%" class="dj_price">
+                                        ¥<b>30.0</b><br>
+                                    </td>
+                                    <td width="13%">
+                                        <span class="jj_box">
+                                            <a title="减少" class="minus fl">-</a>
+                                                <input name="input" class="editAmount fl" type="text" value="1" maxlength="3" minvalue="1" maxvalue="500" onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}">
+                                            <a title="增加" class="add fl">+</a>              
+                                        </span>
+                                    </td>                                       
+                                    <td class="xj_price" width="13%">¥<b>30.0</b></td>
+                                    <td width="13%" class="btn_edit">
+                                        <div class="tip_fram col-blue addFavoriteSuccess" style="display:none">
+                                            <div class="tip_content">
+                                                <p><i class="suc-icon"></i>加入收藏夹成功！</p>
+                                            </div>
+                                            <b class="tip_icon"></b>
+                                        </div>
+                                        <div class="tip_fram col-red addFavoriteFail" style="display:none">
+                                            <div class="tip_content"><p><i class="ero-icon"></i>已经收藏过本商品！</p></div>
+                                            <b class="tip_icon"></b>
+                                        </div> 
+                                        <a class="addFavorite">  加入收藏夹  </a>
+                                        <br>
+                                        <a class="btn-remove">删除</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="trFooter">
+                        <ul class="clearfix">
+                            <li>
+                                <input class="selectAll" type="checkbox" name="checkbox">
+                                <label>全选</label>
+                            </li>
+                            <li class="removeSelectedGoods">批量删除</li>
+                            <li class="addSelectedFavorite clicktr">批量加入收藏夹</li>
+                                    <!--  <li class='clearIsNotStore'>清除缺货商品</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="subtotal fr">
+                <span class="fl" style="color:red"></span>
+                <span class="jg">
+                    商品件数：<b class="subTotalNum_1-normal">1</b> 件
+                </span>
+                <span>
+                    商品总价：
+                    <b>
+                        ¥<input type="hidden" id="oldSumPriceAll0" value="30.0">
+                        <i>30.0</i>
+                    </b>
+                </span>
+                <span class="buy_yh">
+                    活动优惠：<b>¥<em>-8.0</em></b>
+                </span>
+                <span class="buy_yh">
+                    优惠券：<b>¥<em class="lqzCouponPrivilege_1-normal">0</em>
+                </b></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -3,9 +3,11 @@ require.config({
         'jquery':'../lib/jquery-3.3.1',
         'carousel':'../lib/jQuery.carousel/jQuery.zhjcarousel',
         'common':'../js/common',
+        'rightSide.js':'../js/rightSide'
     },
     shim:{
         'carousel':['jquery'],
-        'common':['jquery']
+        'common':['jquery'],
+        'rightSide':['jquery']
     }
 });
