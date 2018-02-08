@@ -3,9 +3,15 @@ require.config({
         'jquery':'../lib/jquery-3.3.1',
         'carousel':'../lib/jQuery.carousel/jQuery.zhjcarousel',
         'common':'../js/common',
+        'rightSide.js':'../js/rightSide',
+        'addToCar.js':'../js/addToCar',
+        'gdsZoom':'../lib/jquery.gdsZoom/jquery.gdsZoom'
     },
     shim:{
         'carousel':['jquery'],
-        'common':['jquery']
+        'common':['jquery'],
+        'rightSide':['jquery'],
+        'addToCar':['jquery'],
+        'gdsZoom':['jquery'],
     }
 });

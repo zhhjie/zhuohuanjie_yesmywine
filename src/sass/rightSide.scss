@@ -1,0 +1,125 @@
+.rightSide{
+    position:fixed;
+    right:-85px;
+    top:0;
+    width:35px;
+    background:#7E0001;
+    color:#fff;
+    text-align:center;
+    padding-top:240px;
+    .login{
+        cursor:pointer;
+    }
+    .car{
+        a{
+            color:#fff;
+        }
+        padding:0 5px;
+        font-size:14px;
+        text-align:center;
+        height: 120px;
+        padding-top:34px;
+        position:relative;
+        cursor: pointer;
+        &:before{
+            content:"";
+            display:block;
+            background:url(img/sprite.fw.png) no-repeat;
+            background-position:-300px -300px;
+            width: 34px;
+            position:absolute;
+            left:0;
+            top:12px;
+            height: 14px;
+        }
+        .goodscount{
+            display:block;
+            width: 22px;
+            height: 22px;
+            line-height: 22px;
+            text-align:center;
+            background:#F46B0A;
+            border-radius:50%;
+            
+        }
+        .carInfo{
+            background:#fff;
+            position:absolute;
+            left:-360px;
+            top:0;
+            width: 360px;
+            border:1px solid #ccc;
+            h3{
+                color:#333;
+                height: 40px;
+                line-height: 40px;
+                color:#333;
+                border:1px dashed #ccc;
+            }
+            ul{
+                padding:16px 0;
+                li{
+                    color:#333;
+                    font-size:12px;
+                    position:relative;
+                    
+                    a{
+                        display:block;
+                        color:#333;
+                    }
+                    .btn-remove{
+                        position:absolute;
+                        right:0;
+                        top:0;
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+            }
+            .info_b{
+                color:#333;
+                background:#EDE9E5;
+                height: 50px;
+                line-height: 50px;
+                padding:0 15px;
+                .check{
+                    display:block;
+                    background:#DB3838;
+                    margin-top:10px;
+                    color:#fff;
+                    height: 30px;
+                    padding:0 10px;
+                    line-height: 36px;
+                    text-align:center;
+                }
+            }
+            display:none;
+        }
+    }
+    .login a,.side_b li a{
+        display:block;
+        background:url(img/sprite.fw.png) no-repeat;
+        background-position:0 -300px;
+        width: 34px;
+        height: 34px;
+    }
+    .side_b li{
+        padding:1px 0;
+        &:first-child a{
+            background-position:-50px -300px;
+        }
+        &:nth-child(2) a{
+            background-position:-100px -300px;
+        }
+        &:nth-child(3) a{
+            background-position:-150px -300px;
+        }
+        &:nth-child(4) a{
+            background-position:-200px -300px;
+        }
+        &:nth-child(5) a{
+            margin-top:100px;
+            background-position:-250px -300px;
+        }
+    }
+}

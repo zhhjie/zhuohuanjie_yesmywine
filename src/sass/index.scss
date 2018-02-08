@@ -213,7 +213,7 @@ $mainColor:#D3161B;
                             padding:10px 0 0 10px;
                             line-height: 18px;
                             .price{
-                                margin-top:20px;
+                                // margin-top:20px;
                             }
                         }
                     }
@@ -225,6 +225,8 @@ $mainColor:#D3161B;
                         background:#F4F4F0;
                         position:relative;
                         letter-spacing: 2px;
+                        text-wrap:nowrap;
+                        text-overflow: hidden;
                         color:#878787;
                         &:before{
                             content:"";
@@ -549,8 +551,18 @@ $mainColor:#D3161B;
                     top:5px;
                 }
             }
-            a{
+            .prodName{
+                display:none;
                 color:#5B473D;
+            }
+            .goodsInfo{
+                display:block;
+                a{
+                    display:block;
+                }
+                p{
+                    width: 120px;
+                }
             }
         }
     }

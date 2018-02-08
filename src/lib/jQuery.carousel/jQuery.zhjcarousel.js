@@ -99,7 +99,6 @@
 
                 $page.find('li').eq(opt.pageIndex).addClass('active').siblings('li').removeClass('active');
                 var target = -opt.index*opt.width;
-                console.log(target)
                 $ul.animate({left:target},2000);
             }
 

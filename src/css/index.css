@@ -235,10 +235,6 @@
   line-height: 18px;
 }
 
-#main .recommend .main1_r .infoList li a div .price {
-  margin-top: 20px;
-}
-
 #main .recommend .main1_r .infoList li > p {
   height: 26px;
   font-size: 12px;
@@ -247,6 +243,8 @@
   background: #F4F4F0;
   position: relative;
   letter-spacing: 2px;
+  text-wrap: nowrap;
+  text-overflow: hidden;
   color: #878787;
 }
 
@@ -613,8 +611,21 @@
   top: 5px;
 }
 
-#main .right ul li a {
+#main .right ul li .prodName {
+  display: none;
   color: #5B473D;
+}
+
+#main .right ul li .goodsInfo {
+  display: block;
+}
+
+#main .right ul li .goodsInfo a {
+  display: block;
+}
+
+#main .right ul li .goodsInfo p {
+  width: 120px;
 }
 
 #main .title {

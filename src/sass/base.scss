@@ -60,6 +60,7 @@ $mainColor:#D3161B;
 .head_bar{
     background-color:#ECE7E3;
     border-bottom:1px solid #ccc;
+    width:100%;
     ul li{
         float: left;
         $fontSizeColor:#85726C !global; 
@@ -67,6 +68,7 @@ $mainColor:#D3161B;
         font-size:12px;
     }
     .userinfos{
+        width:260px;
         li:first-child{
             padding:0 10px;
             line-height:30px;
@@ -94,7 +96,7 @@ $mainColor:#D3161B;
             }
         }
     }
-    .sitelinks{
+    .sitelinks{width:350px;
         i{  
             display:block;
             width:12px;

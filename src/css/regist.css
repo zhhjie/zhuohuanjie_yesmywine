@@ -36,6 +36,20 @@
   margin-top: 30px;
 }
 
+#main form .fc div {
+  position: relative;
+}
+
+#main form .fc div p {
+  position: absolute;
+  left: 90px;
+  bottom: 4px;
+  height: 14px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #c00;
+}
+
 #main form .fc label {
   padding-left: 1px;
   color: #363636;

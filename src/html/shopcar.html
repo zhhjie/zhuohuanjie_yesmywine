@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/shopcar.css" />
+    <script type="text/javascript" src="../js/require.js" data-main="../js/shopcar"></script>
+</head>
+<body>
+    <header></header>
+    <div class="head_main">
+        <div class="container clearfix">
+           <h1 class="fl">
+                <a href="../index.html">
+                    <img src="../css/img/logo.png"/>
+                </a>
+            </h1> 
+            <div class="h_right fr">
+                <ul class="clearfix">
+                    <li class="active">
+                        <i >1</i>
+                        <span>购物车</span>
+                    </li>
+                    <li>
+                        <i>2</i>
+                        <span>确认订单信息</span>
+                    </li>
+                    <li>
+                        <i>3</i>
+                        <span>购物成功</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div class="container">  
+            <div class="tip-block">  
+                <p>
+                    <em>温馨提示：</em>也买商城订单可以合并下单啦。无论您的购物车里有几家也买商家的商品都可以合并成一张订单付款。
+                    <i class="btn-close fr">&times;</i>
+                </p>
+            </div>
+            <div class="shopcar">
+                <div class="car-top clearfix">
+                    <h3 class="fl">由也买酒配送</h3>
+                    <i class="prod-count fr">2</i>
+                </div>            
+                <div class="car-main">
+                    <div class="trTitle">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td height="34" width="8%">
+                                        <input class="e-selall selectAll selectAll_1-normal" type="checkbox" name="checkbox">
+                                         <label for="checkbox0_t" style="cursor: pointer;">全选</label>
+                                    </td>
+                                    <td class="goodsame">商品名称</td>
+                                    <td width="13%">单价</td>
+                                    <td width="13%">数量</td>                                     
+                                    <td width="13%">小计</td>
+                                    <td width="13%">&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="cartGoodsList">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="inTable" id="tbHover">
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="trFooter">
+                        <ul class="clearfix">
+                            <li>
+                                <input class="selectAll" type="checkbox" name="checkbox">
+                                <label>全选</label>
+                            </li>
+                            <li class="removeSelectedGoods">批量删除</li>
+                            <li class="addSelectedFavorite clicktr">批量加入收藏夹</li>
+                                    <!--  <li class='clearIsNotStore'>清除缺货商品</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="subtotal fr">
+                <span class="fl" style="color:red"></span>
+                <span class="jg">
+                    商品件数：<b class="subTotalNum_1-normal">1</b> 件
+                </span>
+                <span>
+                    商品总价：
+                    <b>
+                        ¥<input type="hidden" id="oldSumPriceAll0" value="30.0">
+                        <i>30.0</i>
+                    </b>
+                </span>
+                <span class="buy_yh">
+                    活动优惠：<b>¥<em>-8.0</em></b>
+                </span>
+                <span class="buy_yh">
+                    优惠券：<b>¥<em class="lqzCouponPrivilege_1-normal">0</em>
+                </b></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
