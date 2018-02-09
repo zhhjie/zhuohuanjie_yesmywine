@@ -353,9 +353,11 @@
                 border:2px solid #DDDBD2;
                 width:190px;
                 height:454px;
+
                 margin-bottom:8px;  
                 transition:all 2s;
                 float: left;
+
 
                 dt{
                     a{
@@ -367,7 +369,9 @@
                     }
                 }
                 .base{
+
                     height: 94px;
+
                     background:#F8F8F5;
                     padding-left:10px;
                     .pname{
@@ -443,6 +447,7 @@
                 &:hover{
                     border-color:#9B303B;
                 }
+
             }
         }
         .pageList{
@@ -478,6 +483,7 @@
                 text-align:center;
                 margin-right:6px;
                 cursor:pointer;
+
             }
         }
     }

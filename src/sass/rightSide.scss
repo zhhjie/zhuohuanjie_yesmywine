@@ -11,9 +11,11 @@
         cursor:pointer;
     }
     .car{
+
         a{
             color:#fff;
         }
+
         padding:0 5px;
         font-size:14px;
         text-align:center;
@@ -32,7 +34,9 @@
             top:12px;
             height: 14px;
         }
+
         .goodscount{
+
             display:block;
             width: 22px;
             height: 22px;
@@ -48,27 +52,33 @@
             left:-360px;
             top:0;
             width: 360px;
+
             border:1px solid #ccc;
 
             h3{
                 color:#333;
+
                 height: 40px;
                 line-height: 40px;
                 color:#333;
                 border:1px dashed #ccc;
             }
             ul{
+
                 padding:16px 0;
                 height:318px;
                 overflow:hidden;
+
                 li{
                     color:#333;
                     font-size:12px;
                     position:relative;
+
                     
                     a{
                         display:block;
                         color:#333;
+
                     }
                     .btn-remove{
                         position:absolute;

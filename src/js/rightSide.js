@@ -2,12 +2,17 @@
 * @Author: Marte
 * @Date:   2018-02-07 10:43:20
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-02-09 13:49:49
+<<<<<<< HEAD
+* @Last Modified time: 2018-02-09 17:09:44
+=======
+* @Last Modified time: 2018-02-07 12:12:06
+>>>>>>> a7ba35224e56c6920a38dbeefb3af62cbe0d6ad5
 */
 
 ;(function($){
     $('.rightSide').height($(window).outerHeight());
     $('.rightSide').animate({right:0},1000);
+
     $('.car').mouseover(function(e){
         
         $('.carInfo').css('display','block');
@@ -74,5 +79,6 @@
                 '</li>';
     }
     
+
 
 })(jQuery);

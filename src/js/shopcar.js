@@ -2,6 +2,7 @@ require(['config'],function(){
     require(['jquery'],function(){
         $('header').load('../html/header.html',function(){
             $('header').children('div').not(':first').hide();
+
         });
         $('footer').load('../html/footer.html',function(){
             $('footer').children('div').not('.foot-copyright').hide();
@@ -138,6 +139,7 @@ require(['config'],function(){
                 }
             })
         }
+
 
     })
 })

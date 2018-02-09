@@ -2,7 +2,11 @@
 * @Author: Marte
 * @Date:   2018-02-05 15:13:41
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-02-08 12:14:56
+<<<<<<< HEAD
+* @Last Modified time: 2018-02-09 17:07:48
+=======
+* @Last Modified time: 2018-02-06 21:00:35
+>>>>>>> a7ba35224e56c6920a38dbeefb3af62cbe0d6ad5
 */
 
 
@@ -42,6 +46,7 @@ define(['common'],function(){
             return code;
         },
         //倒计时
+
         countDown(date){
             var now = Date.now();
             var end = Date.parse(date);
@@ -62,6 +67,7 @@ define(['common'],function(){
                 m : min,
                 h : hour,
                 d : day
+
             }
             return res;
         }

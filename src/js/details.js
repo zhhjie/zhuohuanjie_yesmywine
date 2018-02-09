@@ -1,6 +1,7 @@
 require(['config'],function(){
     require(['jquery'],function($){
         $('header').load('../html/header.html',function(){
+
             require(['header']);
 
             var $nav = $('.nav_l');
@@ -9,6 +10,7 @@ require(['config'],function(){
             $nav.children('ul').css({
                 'display':'none',
             });
+
 
             $('.nav').css('background','#7E0001');
 
@@ -35,6 +37,7 @@ require(['config'],function(){
         $('footer').load('../html/footer.html');
 
         $('#side').load('../html/rightSide.html');
+
 
         var $prod_name = $('.prod-name');
         var $img = $('#current_img');
@@ -151,5 +154,6 @@ require(['config'],function(){
 
             });
         })
+
     });
 })

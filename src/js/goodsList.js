@@ -2,7 +2,11 @@
 * @Author: Marte
 * @Date:   2018-02-05 19:44:59
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-02-09 15:21:48
+<<<<<<< HEAD
+* @Last Modified time: 2018-02-09 17:09:15
+=======
+* @Last Modified time: 2018-02-07 12:13:01
+>>>>>>> a7ba35224e56c6920a38dbeefb3af62cbe0d6ad5
 */
     
 require(['config'],function(){
@@ -29,8 +33,10 @@ require(['config'],function(){
                 $nav.css('background','#624b40');
                 $nav.children('ul').css('display','none')
             })
+
           
             require(['header']);
+
 
         });
         $('footer').load('../html/footer.html');
@@ -38,6 +44,7 @@ require(['config'],function(){
         $('#side').load('../html/rightSide.html');
 
         require(['rightSide']);
+
         //-------------------------分页加载------------------
         var pageNo = 1;
         var pagecount = 0;
@@ -170,6 +177,7 @@ require(['config'],function(){
         }
 
         
+
 
     });
 })

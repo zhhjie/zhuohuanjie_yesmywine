@@ -7,13 +7,16 @@ require.config({
         'addToCar.js':'../js/addToCar',
         'gdsZoom':'../lib/jquery.gdsZoom/jquery.gdsZoom',
         'header':'../js/header'
+
     },
     shim:{
         'carousel':['jquery'],
         'common':['jquery'],
+
         'rightSide':['jquery'],
         'addToCar':['jquery'],
         'gdsZoom':['jquery'],
         'header':['jquery']
+
     }
 });
