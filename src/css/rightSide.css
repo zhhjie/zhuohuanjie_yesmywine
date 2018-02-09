@@ -69,6 +69,8 @@
 
 .rightSide .car .carInfo ul {
   padding: 16px 0;
+  height: 318px;
+  overflow: hidden;
 }
 
 .rightSide .car .carInfo ul li {

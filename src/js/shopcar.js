@@ -3,22 +3,38 @@ require(['config'],function(){
         $('header').load('../html/header.html',function(){
             $('header').children('div').not(':first').hide();
         });
+        $('footer').load('../html/footer.html',function(){
+            $('footer').children('div').not('.foot-copyright').hide();
+            $('.foot-copyright').css({
+                background:'#fff',
+            })
+        });
         $.ajax({
             url: '../api/shopcar.php',
             dataType: 'json',
             success:function(res){console.log(res)
                 var html = "";
+                var total = 0;
                 $.each(res.data, function(index, val) {
                      html+=getRender(val);
+                     total += val.price*val.qty;
                 });
-                $('.prod-count').text(res.count);
-                $('.cartGoodsList').find('tbody').html(html);
 
+                $('.prod-count').text(res.count);
+                $('.subTotalNum_1-normal').text(res.count);
+                $('.oldSumPriceAll0').next()
+                $('.cartGoodsList').find('tbody').html(html);
+                $('#oldSumPriceAll0').next().text(total);
+                $('.total strong').text(total);
+                console.log($('.total'))
                 var $box = $('.jj_box').parent().parent();console.log($box)
                 
                 $box.on('click','a',function(){console.log(this)
                     var $this = $(this);
                     var $input = $('.editAmount');
+                    var price = $this.closest('td').prev('td').find('b').text();
+                    var $xj_price = $this.closest('td').next('td').find('b');
+                    console.log(price)
                     var val = $input.val();
                     var gid = $this.closest('tr').attr('data-id');
                     if($this.text() == '-'){
@@ -28,13 +44,15 @@ require(['config'],function(){
                         }else{
                             val = 0;
                         }
-                        $input.val(val);    
+                        $input.val(val);   
+                        $xj_price.text(price*val);
                     }
                     if($this.text() == '+'){
 
                         val++;
                         $input.val(val); 
                         update(gid,1);
+                        $xj_price.text(price*val);
                     }
                     if($this.text() == '删除'){
                         $.ajax({

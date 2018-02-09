@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-02-05 19:33:18
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-02-07 15:44:26
+* @Last Modified time: 2018-02-09 15:33:16
 */
 
 require(['config'],function(){
@@ -30,11 +30,14 @@ require(['config'],function(){
                 }
             }
             if(this.id == 'code'){      
-                $p = $this.next().next();
+                $p = $p.next();
+                console.log($p);
                 if($this.val() != _code){
                     $p.text('验证码错误');
+                    $('.getCode').text(_code)
                 }else{
                     $p.text('');
+                    $('.getCode').text(_code)
                 }
             }
             if(this.id == 'pwd1'){

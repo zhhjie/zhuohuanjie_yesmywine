@@ -171,6 +171,7 @@ $mainColor:#D3161B;
                    color:#73584A;
                    background:#FFE8E8;
                    border-right:2px solid #fff;
+                   cursor: pointer;
                    h5{ 
                        margin-top:4px;
                        font-size: 22px;
@@ -190,10 +191,15 @@ $mainColor:#D3161B;
 
             .tagInfo{
                 height:308px;
+                width:990px;
                 overflow:hidden;
                 margin:10px 0;
+                position:relative;
             }
             .infoList{
+                position:absolute;
+                
+                top:0;
                 li{
                     float: left;
                     width:185px;
@@ -201,6 +207,7 @@ $mainColor:#D3161B;
                     margin-left:13px;
                     margin-top:1px;
                     border:2px solid #E5E5E5;
+                    margin-bottom: 8px;
                     a{  
                         color:#878787;
                         img{
@@ -924,6 +931,16 @@ $mainColor:#D3161B;
     }
     .brand{
         margin-top:28px;
+        .accordion{
+            li{
+                float: left;
+                width:150px;
+                overflow:hidden;
+            }
+            .end_a{
+                width: 450px;
+            }
+        }
         .bb{
             li{
                 height: 132px;

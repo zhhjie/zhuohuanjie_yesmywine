@@ -39,6 +39,7 @@
 }
 
 #main{
+    margin-bottom:100px;
     .tip-block{
         margin-top:22px;
         p{
@@ -155,6 +156,10 @@
                                 color:#000000;
                                 font-weight:bold;
                             }
+                            img{
+                                width: 80px;
+                                height: 126px;
+                            }
                         }
                         .jj_box{
                             display:block;
@@ -207,6 +212,44 @@
         padding-right:10px;
         b{
             color:#D53939;
+        }
+    }
+    .fixed_bottom{
+        width:100%;
+        position:fixed;
+        left:0;
+        bottom:0;
+        background:#EEEEEE;
+        box-shadow:0 0 0 2px 10px #D8D8D8;
+        .container{
+            padding-left:5px;
+        }
+        span{
+            height: 70px;
+            line-height: 70px;
+            font-size:12px;
+            &:nth-of-type(2){
+                margin: 0 40px 0 20px;
+                color:#E24C4C;
+            }
+            i{
+                color:#E24C4C;
+                strong{
+                    font-size:16px;
+                }
+            }
+            &:nth-of-type(3){
+                margin-right:20px;
+            }
+        }
+        button{
+            width: 210px;
+            height: 50px;
+            line-height: 50px;
+            color:#fff;
+            background:#E24C4C;
+            font-size:20px;
+            margin-left:20px;
         }
     }
 }

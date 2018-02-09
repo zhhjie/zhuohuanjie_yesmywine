@@ -49,6 +49,7 @@
             top:0;
             width: 360px;
             border:1px solid #ccc;
+
             h3{
                 color:#333;
                 height: 40px;
@@ -58,6 +59,8 @@
             }
             ul{
                 padding:16px 0;
+                height:318px;
+                overflow:hidden;
                 li{
                     color:#333;
                     font-size:12px;

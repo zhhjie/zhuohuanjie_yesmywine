@@ -185,6 +185,7 @@
   color: #73584A;
   background: #FFE8E8;
   border-right: 2px solid #fff;
+  cursor: pointer;
 }
 
 #main .recommend .main1_r .tag_rec li h5 {
@@ -206,8 +207,15 @@
 
 #main .recommend .main1_r .tagInfo {
   height: 308px;
+  width: 990px;
   overflow: hidden;
   margin: 10px 0;
+  position: relative;
+}
+
+#main .recommend .main1_r .infoList {
+  position: absolute;
+  top: 0;
 }
 
 #main .recommend .main1_r .infoList li {
@@ -217,6 +225,7 @@
   margin-left: 13px;
   margin-top: 1px;
   border: 2px solid #E5E5E5;
+  margin-bottom: 8px;
 }
 
 #main .recommend .main1_r .infoList li a {
@@ -1035,6 +1044,16 @@
 
 #main .brand {
   margin-top: 28px;
+}
+
+#main .brand .accordion li {
+  float: left;
+  width: 150px;
+  overflow: hidden;
+}
+
+#main .brand .accordion .end_a {
+  width: 450px;
 }
 
 #main .brand .bb li {

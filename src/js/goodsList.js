@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-02-05 19:44:59
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-02-08 20:17:21
+* @Last Modified time: 2018-02-09 15:21:48
 */
     
 require(['config'],function(){
@@ -29,6 +29,9 @@ require(['config'],function(){
                 $nav.css('background','#624b40');
                 $nav.children('ul').css('display','none')
             })
+          
+            require(['header']);
+
         });
         $('footer').load('../html/footer.html');
 
