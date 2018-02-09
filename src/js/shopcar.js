@@ -7,6 +7,7 @@ require(['config'],function(){
             $('footer').children('div').not('.foot-copyright').hide();
             $('.foot-copyright').css({
                 background:'#fff',
+                'margin-bottom':'100px',
             })
         });
         $.ajax({
@@ -24,35 +25,52 @@ require(['config'],function(){
                 $('.subTotalNum_1-normal').text(res.count);
                 $('.oldSumPriceAll0').next()
                 $('.cartGoodsList').find('tbody').html(html);
+
+
+
                 $('#oldSumPriceAll0').next().text(total);
                 $('.total strong').text(total);
                 console.log($('.total'))
                 var $box = $('.jj_box').parent().parent();console.log($box)
                 
-                $box.on('click','a',function(){console.log(this)
+                $box.on('click','a',function(){
                     var $this = $(this);
-                    var $input = $('.editAmount');
+                
                     var price = $this.closest('td').prev('td').find('b').text();
                     var $xj_price = $this.closest('td').next('td').find('b');
-                    console.log(price)
-                    var val = $input.val();
+        
+                    
                     var gid = $this.closest('tr').attr('data-id');
                     if($this.text() == '-'){
+                        var $input = $this.next();
+                        var val = $input.val();
                         val--;
                         if(val > 0){
                             update(gid,-1);
                         }else{
                             val = 0;
                         }
+                        
                         $input.val(val);   
                         $xj_price.text(price*val);
+
+                        total =total = getTotal();
+
+                        $('#oldSumPriceAll0').next().text(total);
+                        $('.total strong').text(total)
                     }
                     if($this.text() == '+'){
-
+                        var $input = $this.prev();
+                        var val = $input.val();
                         val++;
                         $input.val(val); 
                         update(gid,1);
                         $xj_price.text(price*val);
+
+                        total = getTotal();
+                        $('#oldSumPriceAll0').next().text(total);
+                        $('.total strong').text(total)
+
                     }
                     if($this.text() == '删除'){
                         $.ajax({
@@ -68,6 +86,19 @@ require(['config'],function(){
                         })
                     }
                 })
+                
+                console.log($('.xj_price').find('b'))
+                
+                function getTotal(){
+                    var $bs = $('.xj_price').find('b');
+                    var len = $('.xj_price').length;
+                    var total = 0;
+                    for(var i=0;i<len;i++){
+                        total += $bs[i].innerText*1;
+                    }
+                    return total;
+                }
+
             }
         })
         

@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-02-05 16:44:51
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-02-08 17:41:36
+* @Last Modified time: 2018-02-09 16:33:35
 */
 
 require(['config'],function(){
@@ -30,6 +30,7 @@ require(['config'],function(){
                 },
                 success:function(data){console.log(data)
                     if(data == 'success'){
+
                         location.href = '../index.html';
                     }else if(data == 'fail'){
                         $error.text('账户或用户不正确');
